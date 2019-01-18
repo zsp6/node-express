@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <%- include('./commonheader') %>
+
+  <h1>我是一个首页</h1>
+  ejs 模板引擎 的语法
+  <%- name %>
+  <%= age %>
+  <ul>
+    <% for(var i = 0; i < list.length; i++){ %>
+      <li><%= list[i].name %></li>
+    <%}%>
+    <% if(age < 20){ %>
+      <span>小孩</span>
+    <% }else{ %>
+      <%# <span>成人</span>会彻底看不见 %>
+    <% } %>
+     <%- like %>
+    <%%%> 
+     
+  </ul>
+  <!-- <script src="../public/index.js"></script> -->
+  <!-- <script src="http://localhost:3000/index.js"></script> -->
+  <!-- 或者简写 /可写可不写 -->
+  <script src="/index.js"></script>
+</body>
+</html>
